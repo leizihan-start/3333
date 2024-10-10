@@ -1,140 +1,114 @@
 <template>
-  <div class="common-layout">
-    <el-container>
-      <el-aside width="5vw" class="border-r-2 border-black"
-        ><div class="text-center">
-          <Icon
-            icon="icon-park-outline:workbench"
-            style="color: black"
-            class="text-[2vw] ml-[1.5vw] mt-[1vw]"
-          />工作台
-        </div>
-        <div class="text-center">
-          <Icon
-            icon="tdesign:folder-1"
-            style="color: black"
-            class="text-[2vw] ml-[1.5vw] mt-[1vw]"
-          />项目
-        </div>
-        <div class="text-center">
-          <Icon
-            icon="ph:open-ai-logo-fill"
-            style="color: black"
-            class="text-[2vw] ml-[1.5vw] mt-[1vw]"
-          />AI
-        </div>
-        <div class="text-center">
-          <Icon
-            icon="ph:file-text-duotone"
-            style="color: black"
-            class="text-[2vw] ml-[1.5vw] mt-[1vw]"
-          />事项
-        </div>
-        <div class="text-center">
-          <Icon
-            icon="ph:code-fill"
-            style="color: black"
-            class="text-[2vw] ml-[1.5vw] mt-[1vw]"
-          />代码
-        </div>
-        <div class="text-center">
-          <Icon
-            icon="gravity-ui:cube"
-            style="color: black"
-            class="text-[2vw] ml-[1.5vw] mt-[1vw]"
-          />
-          制品
-        </div>
-        <div class="text-center">
-          <Icon
-            icon="ic:baseline-insights"
-            style="color: black"
-            class="text-[2vw] ml-[1.5vw] mt-[1vw]"
-          />
-          洞察
-        </div>
-        <div class="text-center">
-          <Icon
-            icon="akar-icons:book"
-            style="color: black"
-            class="text-[2vw] ml-[1.5vw] mt-[1vw]"
-          />
-          知识
-        </div>
-        <div class="text-center">
-          <Icon
-            icon="mdi:automatic"
-            style="color: black"
-            class="text-[2vw] ml-[1.5vw] mt-[1vw]"
-          />
-          自动化
-        </div>
-        <div class="mt-[1vw]">
-          <Icon
-            icon="icon-park-solid:people-plus"
-            style="color: black"
-            class="text-[2vw] ml-[1.5vw] mt-[1vw]"
-          />
-        </div>
-        <div class="mt-[1vw]">
-          <Icon
-            icon="hugeicons:more-01"
-            style="color: black"
-            class="text-[2vw] ml-[1.5vw] mt-[1vw]"
-          />
-        </div>
-        <div class="mt-[1vw]">
-          <Icon
-            icon="majesticons:bell-line"
-            style="color: black"
-            class="text-[2vw] ml-[1.5vw] mt-[1vw]"
-          />
-        </div>
-        <div class="mt-[1vw]">
-          <Icon
-            icon="hugeicons:setup-01"
-            style="color: black"
-            class="text-[2vw] ml-[1.5vw] mt-[1vw]"
-          />
-        </div>
-        <div class="mt-[1vw]">
-          <Icon
-            icon="ph:question-light"
-            style="color: black"
-            class="text-[2vw] ml-[1.5vw] mt-[1vw]"
-          />
-        </div>
-      </el-aside>
-      <el-container>
-        <el-header
-          class="flex justify-between h-[4.5vw] border-b-2 border-black leading-[4.5vw]"
-          ><div class="text-[1.5vw] font-semibold leading-[4.5vw]">
-            代码仓库
-          </div>
-          <router-link to="/login">登录</router-link></el-header
+  <div>
+    <div>
+      <div class="mt-[1vw]">
+        <Icon
+          icon="icon-park-outline:new-computer"
+          class="w-[1.5vw] h-[1.5vw] ml-[0.5vw]"
+        />
+        <span>工作台</span>
+      </div>
+
+      <div class="mt-[1vw]">
+        <Icon
+          icon="solar:folder-line-duotone"
+          class="w-[1.5vw] h-[1.5vw] ml-[0.4vw]"
+        />
+        <span class="ml-[0.3vw]">项目</span>
+      </div>
+      <div class="mt-[1vw]">
+        <Icon
+          icon="simple-icons:aircall"
+          class="w-[1.5vw] h-[1.5vw] ml-[0.4vw]"
+        />
+        <span class="ml-[0.7vw]">AI</span>
+      </div>
+      <div class="mt-[1vw]">
+        <Icon icon="lucide:file-text" class="w-[1.5vw] h-[1.5vw] ml-[0.4vw]" />
+        <span class="ml-[0.3vw]">事项</span>
+      </div>
+      <div class="mt-[1vw]">
+        <Icon
+          icon="solar:code-square-linear"
+          class="w-[1.5vw] h-[1.5vw] ml-[0.4vw]"
+        />
+        <span class="ml-[0.3vw]">代码</span>
+      </div>
+      <div class="mt-[1vw]">
+        <Icon icon="ph:cube" class="w-[1.5vw] h-[1.5vw] ml-[0.4vw]" />
+        <span class="ml-[0.3vw]">制品</span>
+      </div>
+      <div class="mt-[1vw]">
+        <Icon
+          icon="ic:outline-insights"
+          class="w-[1.5vw] h-[1.5vw] ml-[0.4vw]"
+        />
+        <span class="ml-[0.3vw]">洞察</span>
+      </div>
+      <div class="mt-[1vw]">
+        <Icon icon="mage:book-text" class="w-[1.5vw] h-[1.5vw] ml-[0.4vw]" />
+        <span class="ml-[0.3vw]">知识</span>
+      </div>
+      <div class="mt-[1vw]">
+        <Icon icon="mdi:automatic" class="w-[1.5vw] h-[1.5vw] ml-[0.4vw]" />
+        <span>自动化</span>
+      </div>
+      <div class="mt-[1vw]">
+        <Icon icon="akar-icons:person" class="w-[1.5vw] h-[1.5vw] ml-[0.4vw]" />
+      </div>
+      <div class="mt-[1vw]">
+        <Icon icon="hugeicons:more-02" class="w-[1.5vw] h-[1.5vw] ml-[0.4vw]" />
+      </div>
+      <div class="mt-[1vw]">
+        <Icon
+          icon="lsicon:remind-outline"
+          class="w-[1.5vw] h-[1.5vw] ml-[0.4vw]"
+        />
+      </div>
+      <div class="mt-[1vw]">
+        <Icon icon="tdesign:setting" class="w-[1.5vw] h-[1.5vw] ml-[0.4vw]" />
+      </div>
+      <div class="mt-[1vw]">
+        <Icon
+          icon="iconoir:question-mark-circle"
+          class="w-[1.5vw] h-[1.5vw] ml-[0.4vw]"
+        />
+      </div>
+      <div class="mt-[1vw]">
+        <Icon
+          icon="octicon:feed-person-16"
+          class="w-[1.5vw] h-[1.5vw] ml-[0.4vw]"
+        />
+      </div>
+    </div>
+    <div>
+      <div class="absolute top-[2vw] left-[5vw]">
+        <h1 class="font-bold text-2xl">代码仓库</h1>
+        <div class="w-[200vw] h-[0.1vw] border-2 mt-[2vw]"></div>
+      </div>
+      <div>
+        <router-link
+          to="/basea"
+          class="absolute top-[10vw] left-[6vw] text-xl font-bold"
+          >最近访问</router-link
         >
-        <el-main>
-          <div>
-            <router-link
-              to="/basea"
-              class="w-[6vw] h-[3vw] inline-block text-[1.3vw] focus:border-b-2 border-[#306fde] text-center"
-              >最近访问</router-link
-            ><router-link
-              to="/baseb"
-              class="w-[6vw] h-[3vw] inline-block text-[1.3vw] focus:border-b-2 border-[#306fde] text-center"
-              >全部仓库</router-link
-            ><router-link
-              to="/basec"
-              class="w-[6vw] h-[3vw] inline-block text-[1.3vw] focus:border-b-2 border-[#306fde] text-center"
-              >开源仓库</router-link
-            >
-          </div>
-          <div><router-view></router-view></div>
-        </el-main>
-      </el-container>
-    </el-container>
+        <router-link
+          to="/baseb"
+          class="absolute top-[10vw] left-[15vw] text-xl font-bold"
+          >全部仓库</router-link
+        >
+        <router-link
+          to="/basea"
+          class="absolute top-[10vw] left-[24vw] text-xl font-bold"
+          >开源仓库</router-link
+        >
+      </div>
+      <div class="absolute top-[15vw] left-[40vw]">
+        <router-view></router-view>
+      </div>
+    </div>
   </div>
 </template>
 <script setup>
-import { Icon } from "@iconify/vue/dist/iconify.js";
+import { Icon } from "@iconify/vue";
 </script>

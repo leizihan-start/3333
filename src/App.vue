@@ -1,9 +1,5 @@
 <template>
-  <!-- <LoginPage /> -->
-   <SideTable/>
+  <router-view></router-view>
 </template>
-<script setup>
-// import LoginPage from "./Login/LoginPage.vue";
-import SideTable from './views/Home/SideTable.vue'
-</script>
-
+<script setup></script>
+<style scoped></style>

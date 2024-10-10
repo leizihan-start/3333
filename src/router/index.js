@@ -1,22 +1,38 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "../views/HomePage.vue";
-import VisitPage from "../views/Home/VisitPage.vue";
-import AllPage from "../views/Home/AllPage.vue";
+import LoginPage from "../views/Login/LoginPage.vue";
+import BaseA from "../views/Nav/BaseA.vue";
+import BaseB from "../views/Nav/BaseB.vue";
+import BaseC from "../views/Nav/BaseC.vue";
 
 // 定义路由
 const routes = [
   {
     path: "/",
-    name: "homepage",
-    component: HomePage,
+    redirect: "/login",
   },
   {
-    path:'/visit',
-    component:VisitPage,
-  },{
-    path:'/all',
-    component:AllPage,
-  }
+    path: "/home",
+    component: HomePage,
+    children: [
+      {
+        path: "/basea",
+        component: BaseA,
+      },
+      {
+        path: "/baseb",
+        component: BaseB,
+      },
+      {
+        path: "/basec",
+        component: BaseC,
+      },
+    ],
+  },
+  {
+    path: "/login",
+    component: LoginPage,
+  },
 ];
 
 // 创建路由实例
